@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR CODE</title>
+</head>
+<body>
+{% if results %}
+<img src="{{ url_for('static', filename='myqr.png' ) }}" alt="QR Code" width="500" height="600" />
+{% else %}
+<h1>{{results }}</h1>
+    <h1>No form link provided</h1>
+ {% endif %}
+<!--    {% if result %}-->
+<!--    <h2>{{ result.title }}</h2>-->
+<!--    <static src="{{ result.image_url }}" alt="{{ result.title }}">-->
+<!--    {% endif %}-->
+</body>
+</html>

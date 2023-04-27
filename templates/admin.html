@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+    <form action="{{ url_for('results') }}" method="POST">
+        <label>Attendance link (google form link)</label>
+        <div class="form-check">
+          <input type="text" name="formUrl">
+        </div>
+        <input type="submit" name="next" value="submit">
+     </form>
+</body>
+</html>
